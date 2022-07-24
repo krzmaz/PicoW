@@ -16,6 +16,9 @@ include(cmake/pico_sdk_import.cmake)
 
 include(cmake/utils.cmake)
 
+# copy it over from cmake/credentials.cmake.example
+include(cmake/credentials.cmake)
+
 project(PicoW C CXX ASM)
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 set(CMAKE_C_STANDARD 11)
@@ -32,3 +35,4 @@ pico_sdk_init()
 
 
 add_subdirectory(src/HelloPico)
+add_subdirectory(src/LwipWebServer)

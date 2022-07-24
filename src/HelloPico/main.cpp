@@ -15,8 +15,10 @@ int main() {
     }
     while (true) {
         cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
+        printf("LED on!\n");
         sleep_ms(100);
         cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 0);
+        printf("LED off!\n");
         sleep_ms(100);
     }
 }

@@ -14,6 +14,8 @@ set(PICO_BOARD pico_w)
 # note: this must happen before project()
 include(cmake/pico_sdk_import.cmake)
 
+include(cmake/utils.cmake)
+
 project(PicoW C CXX ASM)
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 set(CMAKE_C_STANDARD 11)

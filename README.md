@@ -1,10 +1,1 @@
-### One time setup
-```
-cp cmake/credentials.cmake.example cmake/credentials.cmake
-# <fill in your credentials>
-```
-### Building
-```
-./build.sh
-```
-
+This is a single repository to contain various experiments, not to create separate repos for each 100 LOC project

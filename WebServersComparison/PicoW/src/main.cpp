@@ -26,9 +26,9 @@ int main() {
     cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
 
     cyw43_arch_enable_sta_mode();
-    // this seems to be the best be can do using the predefined `cyw43_pm_value` macro
+    // this seems to be the best be can do using the predefined `cyw43_pm_value` macro:
     // cyw43_wifi_pm(&cyw43_state, CYW43_PERFORMANCE_PM);
-    // however it doesn't use the `CYW43_NO_POWERSAVE_MODE` value
+    // however it doesn't use the `CYW43_NO_POWERSAVE_MODE` value, so we do this instead:
     cyw43_wifi_pm(&cyw43_state, cyw43_pm_value(CYW43_NO_POWERSAVE_MODE, 20, 1, 1, 1));
 
     printf("Connecting to WiFi...\n");

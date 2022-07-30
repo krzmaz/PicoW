@@ -1,4 +1,4 @@
-set(PROGRAM_NAME lwip_web_server)
+set(PROGRAM_NAME pico_w_webserver)
 
 set(MAKE_FS_DATA_SCRIPT ${CMAKE_CURRENT_LIST_DIR}/external/makefsdata)
 
